@@ -7,6 +7,10 @@ function App() {
       <Typography component="h2" data-test="heading" variant="h2">
         Hello world
       </Typography>
+      <div data-test="book-list">
+        <div className="book-item" />
+        <div className="book-item" />
+      </div>
     </div>
   );
 }
