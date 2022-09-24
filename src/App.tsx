@@ -1,24 +1,15 @@
 import { Typography } from "@mui/material";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
-import BookList from "./components/BookList";
+import BookListContainer from "./components/BookListContainer";
 
 function App() {
-  const [books, setBooks] = useState([]);
-  useEffect(() => {
-    const fetchBooks = async () => {
-      const res = await axios.get("http://localhost:8080/books");
-      setBooks(res.data);
-    };
-    fetchBooks();
-  }, []);
   return (
     <div>
       <Typography component="h2" data-test="heading" variant="h2">
         Hello world
       </Typography>
-      <BookList books={books} />
+      <BookListContainer />
     </div>
   );
 }
