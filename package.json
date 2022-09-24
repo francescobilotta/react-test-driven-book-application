@@ -29,7 +29,8 @@
     "lint": "npm run eslint -- --max-warnings=0 src",
     "lint:fix": "npm run eslint -- --fix src",
     "lint:css": "stylelint src/**/*.css",
-    "format": "prettier . --write"
+    "format": "prettier . --write",
+    "e2e": "cypress run"
   },
   "eslintConfig": {
     "extends": [
